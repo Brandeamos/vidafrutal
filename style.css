@@ -108,7 +108,7 @@ body {
 	margin: 100px;
 	font-size: 75px;
 	line-height: 80px;
-	color: #FFFFFF;
+	color: #218942;
 	text-transform: uppercase;
 	margin-bottom: 25px;
 }
@@ -581,16 +581,24 @@ body.darkmode{
 	}
 	.menu .navbar {
 		position: absolute;
-		top: calc(100% + 109px);/*Ajusta la posicón vertical*/
+		top: calc(100% + 75px);/*Ajusta la posicón vertical*/
 		left: 0;
 		right: 0;
-		background-color: #323337;
+		background-color: #218942;
 		display: none;
 	}
 
 	.menu .navbar ul li {
 		width: 100%;
 		height: 49px;
+	}
+	
+	.menu .navbar ul li a {
+		padding: 5px;
+	}
+	
+	.menu .navbar ul li a:hover {
+		color: white;
 	}
 
 	#menu:checked ~ .navbar {
@@ -613,7 +621,8 @@ body.darkmode{
 	.header-content h1 {
 		padding: 100px 0;
 		margin: 0px auto;
-		font-size: 25px;
+		font-size: 46px;
+		color: black;
 	}
 
 
@@ -648,10 +657,13 @@ body.darkmode{
 		margin-bottom: 0;
 	}
 	
-	
+	.impresos-content h3 {
+		font-size: 40px;
+	}
 
 	.impresos-img {
-		display: none;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.impresos-1 {
@@ -671,7 +683,8 @@ body.darkmode{
 	}
 	
 	.impresos-1 img {
-		display: none;
+		display: flex;
+		flex-direction: column;
 	}
 	
 	
@@ -679,10 +692,11 @@ body.darkmode{
 		background-image: linear-gradient(
 		rgb(0,0,0,0.7),
 		rgba(0,0,0,0.7)),
-		url(images/mockups.png);
+		url(images/4640.jpg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		margin: 15px auto;
 	}
 	
 	.services {
@@ -712,8 +726,8 @@ body.darkmode{
 		font-size: 14px;
 	}
 	.services-1 img {
-		width: 50px;
-		height: 50px;		
+		width: auto;
+		height: 237px;		
 	}
 	
 	.services-content #numero-telefono {
