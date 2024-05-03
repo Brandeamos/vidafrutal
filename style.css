@@ -24,13 +24,13 @@ body {
 
 .header {
 	background-image: linear-gradient(
-		rgba(215,252,196, 0),
-		rgba(215,252,196, 0.4)),
+		rgba(64,189,0, 0.6),
+		rgb(255,255,255)),
 		url(images/4640.jpg);
-	background-position: center bottom;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 70vh;
+	min-height: 30vh;
 	display: flex;
 	align-items: center;
 }
@@ -41,12 +41,12 @@ body {
 	font-size: 1em;
 	padding: 10px;
 	border: ;
-	background: transparent;
-	color: black;
+	background: #0006;
+	color: white;
 }
 
 .header button:hover{
-	color: #218942;
+	color: #b3fbff;
 }
 
 .menu {
@@ -58,18 +58,6 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
-
-.logo img {
-	/*color: #FFFDFC;
-	font-size: 25px;
-	font-weight: 800;*/
-	width: 180px;
-	height: 180px;
-	position: relative;
-	top: 30px;
-	
-}
-
 .menu .navbar ul li {
 	position: relative;
 	float: left;
@@ -84,7 +72,7 @@ body {
 }
 
 .menu .navbar ul li a:hover{
-	color: #218942;
+	color: rgb(60, 128, 19);
 }
 
 #menu {
@@ -102,15 +90,6 @@ body {
 
 .header-content {
 	text-align: center;
-}
-
-.header-content h1 {
-	margin: 100px;
-	font-size: 75px;
-	line-height: 80px;
-	color: #218942;
-	text-transform: uppercase;
-	margin-bottom: 25px;
 }
 
 .header-content p {
@@ -146,10 +125,31 @@ body {
 		
 }
 
+.logo img {
+	/*color: #FFFDFC;
+	font-size: 25px;
+	font-weight: 800;*/
+	width: 200px;
+	height: 200px;
+	
+}
+.impresos-content h1 {
+	margin: 100px;
+	font-size: 75px;
+	line-height: 80px;
+	color: #218942;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+
+
+
 .impresos-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .impresos-content h2 {
@@ -157,17 +157,18 @@ body {
 	font-size: 76px;
 	line-height: 44px;
 	color: #218942;
-	text-transform: uppercase;
+	text-transform: uppercase;	
+	justify-content: space-between;
 	margin-bottom: 30px;
 }
 .impresos-content h3 {
 	color: #218942;
 }
 
-.txt-white {
-	font-size: 28px;
-	color:#ffffff;
-
+#txt-green {
+	font-size: 24px;
+	color: #218942; 
+	margin: 4px 0 0 0;
 }
 
 .txt-p {
@@ -390,11 +391,34 @@ body.darkmode{
 	background-color: rgb(32,32,44);
 	color: #ffffff;	
 }
+.darkmode .menu .navbar ul li a {
+	color: #ffffff;
+}
+.darkmode .menu .navbar ul li a:hover {
+	color: #b3fbff;
+}
+.darkmode #txt-green {
+	color: #77b943;	
+}
+
+.darkmode .menu-icono {
+	filter: invert(1); /*invierte los colores del svg*/
+}
+
+.darkmode .header {
+	background-image: linear-gradient(
+	rgba(64,189,0,0.6),
+	rgb(27,48,0)),
+	url(images/4640.jpg);
+}
 
 .darkmode .impresos{
 	background-color: rgb(32,32,44);
 	background: linear-gradient(rgb(27,48,0), rgb(32,32,44));
 } 
+.darkmode .impresos-content h1 {
+	color: #ffffff;
+}
 .darkmode .impresos h3{
 	color: #77b943;
 	
@@ -437,132 +461,151 @@ body.darkmode{
 
 
 @media(max-width:991px){
-	.menu {
-		padding: 30px;
-	}
+.menu {
+	padding: 30px;
+}
 
-	.menu label {
+.menu label {
 		display: initial;
-	}
-	.menu .navbar {
-		position: absolute;
-		top: calc(100% + 122px);/*Ajusta la posicón vertical*/
-		left: 0;
-		right: 0;
-		background-color: #323337;
-		display: none;
-	}
+}
 
-	.menu .navbar ul li {
+
+.menu .navbar {
+	position: absolute;
+	top: calc(100%);/*Ajusta la posicón vertical*/
+	left: 0;
+	right: 0;
+	background-color: #323337;
+	display: none;
+}
+
+.menu .navbar ul li {
 		width: 100%;
-	}
+}
+.menu .navbar ul li a {
+	color: #ffffff;
+}
 
-	#menu:checked ~ .navbar {
-		display: initial;
-	}
+#menu:checked ~ .navbar {
+	display: initial;
+}
 
-	.header {
-		min-height: 0vh;
-	}
+.header {
+	min-height: 0vh;
+}
 
-	.header-content {
-		padding: 100px 30px;
-	}
+.header-content {
+	padding: 100px 30px;
+}
 
-	.header-content p {
-		padding: 0;
-	}
+.header-content p {
+	padding: 0;
+}
 	
-	.header-content h1 {
-		padding: 90px 15px;
-		margin: 0 auto;
-	}
+.header-content h1 {
+	padding: 90px 15px;
+	margin: 0 auto;
+}
 
 
-	.impresos {
-		padding: 30px;
-		min-width: 360px;
-	}
-	.impresos-content {
-		margin: 5px;
-		align-items: center;
-		text-align: center;
-		
-	}
-
-	.impresos-content h2 {
-		padding: 15px;
-		margin: initial;
-	}
-
-	.txt-p {
-		padding: 15px 15px;
-		max-width: 360px;
-		margin: 0 auto;
-	}
-
-	.impresos-group {
-		margin-bottom: 0;
-	}
-
-	.impresos-img {
-		display: none;
-	}
-
-	.impresos-1 {
-		padding: 0 14px;
-		
-	}
+.impresos {
+	padding: 30px;
+	min-width: 360px;
+	top: 396px;
+}
+.impresos-content {
+	margin: 5px;
+	align-items: center;
+	text-align: center;
 	
-	.services {
-		padding: 30px;
-	}
+}
 
-	.services-content p {
-		padding: 0;
-	}
+.impresos-content h1 {
+	padding: 15px;
+	margin: initial;
+}
 
-	.services-group {
-		margin-bottom: 0px;
-	}
+.impresos-content h2 {
+	padding: 15px;
+	margin: 0 auto;
+	font-size: 40px;
+}
 
-	.services-1 {
-		margin-bottom: 25px;
-	}
+.txt-p {
+	padding: 15px 15px;
+	max-width: 360px;
+	margin: 0 auto;
+}
+#txt-green {
+	margin-bottom: 30px;
+}
 
-	.general {
-		flex-direction: column;
-	}
 
-	.general-1 {
-		width: 100%;
-		padding: 30px;
-		text-align: center;
-	}
+.impresos-group {
+	margin-bottom: 0;
+}
+
+
+.impresos-img {
+display: none;
+}
+
+.impresos-1 {
+	padding: 0 14px;
+	
+}
+	
+.services {
+	padding: 30px;
+}
+
+.services-content p {
+	padding: 0;
+}
+
+.services-group {
+	margin-bottom: 0px;
+}
+
+.services-1 {
+	margin-bottom: 25px;
+}
+
+.general {
+	flex-direction: column;
+}
+
+.general-1 {
+	width: 100%;
+	padding: 30px;
+	text-align: center;
+}
 
 	.general-2, .general-3 {
-		display: none;
-	}
+	display: none;
+	}	
 
-	.contacto {
-		padding: 30px;
-	}
+.contacto {
+	padding: 30px;
+}
 
-	.contacto-content {
-		flex-direction: column;
-	}
+.contacto-content {
+	flex-direction: column;
+}	
 
-	.contacto-1 {
-		padding: 0;
-	}
+.contacto-1 {
+	padding: 0;
+}
 
-	.footer {
-		padding: 30px;
-	}
-	.footer-content {
-		flex-direction: column;
-		text-align: center;
-	}
+.footer {
+	padding: 30px;
+}	
+
+.footer-content {
+	flex-direction: column;
+	text-align: center;
+}
+
 }
 
 /* ---------------------------------Estilos para dispositivos móviles---------------------------------- */
@@ -657,8 +700,12 @@ body.darkmode{
 		margin-bottom: 0;
 	}
 	
-	.impresos-content h3 {
+	.impresos-content h1 {
 		font-size: 40px;
+	}
+
+	#txt-green {
+		font-size: 26px;
 	}
 
 	.impresos-img {
@@ -700,13 +747,14 @@ body.darkmode{
 	}
 	
 	.services {
-		padding: 30px;
+		padding: 440px 0px;
 	}
 	
 	
 	.services-content p {
 		padding: 0;
 		font-size: 25px;
+		
 	}
 	.services-content h2 {
 		font-size: 40px;
