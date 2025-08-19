@@ -10,7 +10,21 @@
     --color-neutro-cla-rgba: rgba(216,230,194,0.6); /*color neutro claro con transparencia*/
     --color-verde: #a9b638; /*color secundario verde*/
     --color-tortilla: #e6dfcc; /*color beige*/
-
+/* PALETA DE COLORES PARA SABORES*/
+	
+	--jamaica-hierbabuena: rgb(142,0,65);
+	--lima: rgb(130,201,30);
+	--pepino-limon: rgb(115,169,80);
+	--horchata: rgb(227,201,160);
+	--tamarindo: rgb(181,113,60);
+	--guayaba-fresa: rgb(232,76,124);
+	--limon-chia: rgb(161,196,0);
+	--limon-jengibre: rgb(212,177,40);
+	--jamaica: rgb(196,30,58);
+	--pina-alfalfa: rgb(201,180,88);
+	--agua-natural: rgb(79,195,247);
+    
+    
 }
 
 *{
@@ -236,7 +250,6 @@ body {
 }
 
 
-
 .services {
 	background-image: linear-gradient(
 	var(--color-verde-cla),
@@ -285,7 +298,6 @@ body {
 	margin-bottom: 15px;
 }
 
-
 .services-group {
 	display: flex;
 	justify-content: space-between;
@@ -293,16 +305,24 @@ body {
 }
 
 .services-1 {
-	padding: 0 0px;
+	padding: 15px;
 	width: 33.33%;
+	border-radius:15px;
+	background-color:rgba(255,255,255,0);
+	transition: all 0.5s ease;
 }
 
 .services-1 img {
 	width: 33.33%;
 	margin-bottom: 15px;
-	transition: all 0.3s ease;
+	transition: all 0.5s ease;
 	cursor: pointer;
 }
+.services-1 h3 {
+	color: var(--color-neutro-cla);
+	font-size: 24px;
+}
+
 /* EFECTO DE COSQUILLEO PARA IMÁGENES*/
 .services-1 img:hover {
 	animation: tickle 0.5s ease;
@@ -319,9 +339,56 @@ body {
 	100% { transform: scale(1.05) rotate(0deg); }
 }
 
-.services-1 h3 {
-	color: #ffffff;
-	font-size. 24px;
+.services-1:hover {
+	text-shadow: 0 0 10px black;
+	text-decoration-color: var(--color-osc);
+}
+
+
+#jamaica-hierbabuena:hover {
+	background-color: var(--jamaica-hierbabuena);
+
+}
+#lima:hover {
+	background-color: var(--lima);
+}
+
+
+#pepino-limon:hover {
+	background-color: var(--pepino-limon);
+}
+
+#horchata:hover {
+	background-color: var(--horchata);
+}
+
+#tamarindo:hover {
+	background-color: var(--tamarindo);
+}
+
+#guayaba-fresa:hover {
+	background-color: var(--guayaba-fresa);
+}
+
+#pina-alfalfa:hover {
+	background-color: var(--pina-alfalfa);
+}
+
+
+#limon-chia:hover {
+	background-color: var(--limon-chia);
+}
+
+#limon-jengibre:hover {
+	background-color: var(--limon-jengibre);
+}
+
+#jamaica:hover {
+	background-color: var(--jamaica);
+}
+
+#agua-natural:hover {
+	background-color: var(--agua-natural);
 }
 
 
