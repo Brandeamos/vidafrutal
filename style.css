@@ -171,7 +171,7 @@ body {
 }
 
 .impresos-content h2 {
-	margin: 214px;
+	margin: 150px;
 	font-size: 76px;
 	line-height: 44px;
 	color: var(--color-verde-int);
@@ -187,6 +187,11 @@ body {
 	font-size: 24px;
 	color: var(--color-verde-int); 
 	margin: 4px 0 0 0;
+}
+#txt-claro {
+	font-size: 24px;
+	color: var(--color-neutro-cla); 
+	margin: 20px;
 }
 
 .txt-p {
@@ -295,6 +300,23 @@ body {
 .services-1 img {
 	width: 33.33%;
 	margin-bottom: 15px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+/* EFECTO DE COSQUILLEO PARA IMÁGENES*/
+.services-1 img:hover {
+	animation: tickle 0.5s ease;
+	transform: scale(1.05);
+	box-shadow: 0 8pb 16px rgba(0,0,0,0.2);
+}
+
+/*Definición de la animación de cosquilleo*/
+@keyframes tickle {
+	0% { transform: scale(1.05) rotate(0deg); }
+	25% { transform: scale(1.05) rotate(-2deg); }
+	50% { transform: scale(1.05) rotate(0deg); }
+	75% { transform: scale(1.05) rotate(2deg); }
+	100% { transform: scale(1.05) rotate(0deg); }
 }
 
 .services-1 h3 {
