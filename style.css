@@ -16,14 +16,16 @@
 	--lima: rgb(130,201,30);
 	--pepino-limon: rgb(115,169,80);
 	--horchata: rgb(227,201,160);
+	--horchata-fresa: rgb(255,158,255);
 	--tamarindo: rgb(181,113,60);
 	--guayaba-fresa: rgb(232,76,124);
 	--limon-chia: rgb(161,196,0);
-	--limon-jengibre: rgb(212,177,40);
+	--limon-curcuma: rgb(212,177,40);
 	--jamaica: rgb(196,30,58);
 	--pina-alfalfa: rgb(201,180,88);
 	--agua-natural: rgb(79,195,247);
-    
+	--kahlua: rgb(134,54,37);
+    --te-helado: rgb(97,183,95);
     
 }
 
@@ -249,12 +251,16 @@ body {
 	margin-bottom: 15px;
 }
 
+.impresos-1 li{
+	list-style-type: disc;
+}
+
 
 .services {
 	background-image: linear-gradient(
 	var(--color-verde-cla),
 	rgba(0, 0, 0, 0.4)),
-	url(images/2147920811.jpg);
+	url(images/2147920811.webp);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -379,8 +385,8 @@ body {
 	background-color: var(--limon-chia);
 }
 
-#limon-jengibre:hover {
-	background-color: var(--limon-jengibre);
+#limon-curcuma:hover {
+	background-color: var(--limon-curcuma);
 }
 
 #jamaica:hover {
@@ -389,6 +395,18 @@ body {
 
 #agua-natural:hover {
 	background-color: var(--agua-natural);
+}
+
+#horchata-fresa:hover {
+	background-color: var(--horchata-fresa);
+}
+
+#kahlua:hover {
+	background-color: var(--kahlua);
+}
+
+#te-helado:hover {
+	background-color: var(--te-helado);
 }
 
 
